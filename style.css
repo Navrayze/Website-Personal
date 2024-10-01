@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins";
+}
+
+html {
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+:root {
+    --bg-color: #080808;
+    --second-bg-color: #001005;
+    --text-color: white;
+    --main-color: #006eff;
+    --red-color: rgb(235, 37, 37);
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+
+
+section {
+    min-height: 100vh;
+    padding: 10rem 12%;
+}
+
+.ht-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+}
+
+.ht-hp {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.ht-hp h1 {
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 8rem;
+    font-weight: 600;
+    margin-top: 2.5rem ;
+    line-height: 1;
+    cursor: pointer;
+    transition: 0.3s;
+    color: var(--main-color);
+}
+
+.ht-hp h1:hover {
+    transform: scale(1.1);
+
+    color: var(--red-color);
+}
+
+.ht-hp p {
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 4rem;
+    margin: 6rem 0;
+    cursor: pointer;
+    transition: 0.3s;
+    color: var(--red-color);
+}
+
+.ht-hp p:hover {
+    transform: scale(1.1);
+    color: var(--main-color);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--red-color);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--bg-color);
+}
+
+/* MN START */
+
+.head-mn {
+    text-align: center;
+    font-size: 7rem;
+    margin: 5rem 0;
+    color: var(--main-color);
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.head-mn:hover {
+    transform: scale(1.03);
+    color: var(--red-color);
+}
+
+.mn{
+    background-color: var(--second-bg-color);
+    color: black;
+}
+
+.mn-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-items: center;
+    gap: 8rem 4rem;
+}
+
+.mn-container .mn-box {
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-color);
+    height: 400px;
+    width: 300px;
+    border-radius: 3rem;
+    cursor: pointer;
+    border: 5px solid transparent;
+    transition: 0.4s ease-in-out;
+    color: var(--bg-color);
+}
+
+.mn-container .mn-box:hover {
+    background-color: var(--second-bg-color);
+    color: var(--red-color);
+    border: 5px solid var(--red-color);
+    transform: scale(1.03);
+}
+
+.mn-container .mn-box .mn-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+
+}
+
+.mn-container .mn-box .mn-info img{
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    border-radius: 40%;
+    border: 5px solid transparent;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.mn-container .mn-box .mn-info img:hover {
+    transform: scale(1.03);
+
+}
+
+.mn-container .mn-box .mn-info h4 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.mn-container .mn-box .mn-info p {
+    margin-top: 10px;
+    font-size: 19px;
+    font-family: "Poppins";
+}
+
+/* MN END */
+
+/* CAO START */
+
+.cao{
+    background-color: var(--bg-color);
+}
+
+.h-cao {
+    text-align: center;
+    font-size: 7rem;
+    margin: 5rem 0;
+    color: var(--red-color);
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.h-cao:hover {
+    transform: scale(1.03);
+    color: var(--main-color);
+}
+
+.and {
+    text-align: center;
+    font-size: 7rem;
+    color: var(--red-color);
+    transition: 0.4s ease-in-out;
+}
+
+.and:hover {
+    transform: scale(1.03);
+    color: var(--main-color);
+}
+
+.cao-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-items: center;
+    gap: 8rem 4rem;
+}
+
+.cao-container .cao-box {
+    display: flex;
+    justify-content: center;
+    background-color:var(--second-bg-color);
+    color: var(--red-color);
+    height: 400px;
+    width: 300px;
+    border-radius: 3rem;
+    cursor: pointer;
+    border: 5px solid var(--red-color);
+    transition: 0.4s ease-in-out;
+}
+
+.cao-container .cao-box:hover {
+    background-color: var(--second-bg-color);
+    color: var(--main-color);
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+}
+
+.cao-container .cao-box .cao-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+.cao-container .cao-box .cao-info img{
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    border-radius: 40%;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.cao-container .cao-box .cao-info img:hover {
+    transform: scale(1.03);
+
+}
+
+.cao-container .cao-box .cao-info h4 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.cao-container .cao-box .cao-info .btn-caos {
+    margin-top: 30px;
+    font-size: 16px;
+    width: 110px;
+    background-color: transparent;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+    font-family: "Poppins";
+    border-radius: 6rem;
+    transform: scale(1.03);
+    color: var(--red-color);
+    border: 3px solid var(--red-color);
+}
+
+.cao-container .cao-box .cao-info .btn-caos:hover {
+    background-color: var(--second-bg-color);
+    color: var(--main-color);
+    border: 3px solid ;
+    transform: scale(1.03);
+}
+
+/* second btn start */
+.cao-container .cao-box .cao-info .btn-caos1 {
+    margin-top: 30px;
+    font-size: 12px;
+    width: 110px;
+    background-color: transparent;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+    font-family: "Poppins";
+    border-radius: 6rem;
+    transform: scale(1.03);
+    color: var(--red-color);
+    border: 3px solid var(--red-color);
+}
+
+.cao-container .cao-box .cao-info .btn-caos1:hover {
+    background-color: var(--second-bg-color);
+    color: var(--main-color);
+    border: 3px solid ;
+    transform: scale(1.03);
+}
+/* second btn end */
+
+/* CAO END */

@@ -1,0 +1,367 @@
+/* Start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins";
+}
+
+html {
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+:root {
+    --bg-color: #080808;
+    --second-bg-color: #001005;
+    --text-color: white;
+    --main-color: #006eff;
+    --red-color: rgb(235, 37, 37);
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 12%;
+}
+
+/* End */
+
+
+/* Start Scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--red-color);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--bg-color);
+}
+
+/* End ScrollBar */
+
+
+
+/* OS START */
+
+.os{
+    background-color: var(--second-bg-color);
+    color: black;
+}
+
+.os-head {
+    text-align: center;
+    font-size: 7rem;
+    margin: 5rem 0;
+    color: var(--main-color);
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.os-head:hover {
+    transform: scale(1.03);
+    color: var(--red-color);
+}
+
+.os-container1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    align-items: center;
+    justify-items: center;
+    gap: 6rem 7rem;
+}
+
+.os-container1 .os-box1 {
+    display: flex;
+    justify-content: center;
+    background-color:var(--second-bg-color);
+    color: var(--red-color);
+    height: 450px;
+    width: 300px;
+    border-radius: 3rem;
+    cursor: pointer;
+    border: 5px solid var(--red-color);
+    transition: 0.4s ease-in-out;
+}
+
+.os-container1 .os-box1:hover {
+    background-color: var(--second-bg-color);
+    color: var(--main-color);
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+}
+
+.os-container1 .os-box1 .os-info1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+.os-container1 .os-box1 .os-info1 img{
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    border-radius: 40%;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.os-container1 .os-box1 .os-info1 img:hover {
+    transform: scale(1.03);
+
+}
+
+.os-container1 .os-box1 .os-info1 h4 {
+    font-size: 28px;
+    margin-top: 14px;
+}
+
+.os-container1 .os-box1 .os-info1 .btn-caos {
+    margin-top: 3rem;
+    font-size: 16px;
+    width: 110px;
+    background-color: transparent;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+    font-family: "Poppins";
+    border-radius: 6rem;
+    transform: scale(1.03);
+    color: var(--red-color);
+    border: 3px solid var(--red-color);
+}
+
+.os-container1 .os-box1 .os-info1 .btn-caos:hover {
+    background-color: var(--second-bg-color);
+    color: var(--main-color);
+    border: 3px solid ;
+    transform: scale(1.03);
+}
+
+/* OS END */
+
+/* OS 2 START */
+
+.os-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    align-items: center;
+    justify-items: center;
+    gap: 8rem 7rem;
+}
+
+.os-container .os-box {
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-color);
+    height: 590px;
+    width: 430px;
+    border-radius: 3rem;
+    cursor: pointer;
+    border: 5px solid var(--red-color);
+    transition: 0.4s ease-in-out;
+    color: var(--red-color);
+}
+
+.os-container .os-box:hover {
+
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+    color: var(--main-color);
+    box-shadow: 0 0 2px var(--main-color),
+    0 0 50px var(--main-color),
+    0 0 100px var(--main-color);
+}
+
+.os-container .os-box .os-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+
+}
+
+.os-container .os-box .os-info h4 {
+    color: var(--main-color);
+    font-size: 28px;
+    margin-top: 14px;
+}
+
+.os-container .os-box .os-info p {
+    margin-top: 10px;
+    font-size: 21px;
+    font-family: "Poppins";
+}
+
+/* OS 2 END */
+
+/* OS 2 part 2 START */
+.os-container2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-items: center;
+    gap: 6rem 8rem;
+    margin-top: 150px;
+}
+
+.os-container2 .os-box2 {
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-color);
+    height: 550px;
+    width: 1050px;
+    border-radius: 3rem;
+    cursor: pointer;
+    border: 5px solid var(--red-color);
+    transition: 0.4s ease-in-out;
+    color: var(--red-color);
+}
+
+.os-container2 .os-box2:hover {
+
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+    color: var(--main-color);
+    box-shadow: 0 0 2px var(--main-color),
+    0 0 50px var(--main-color),
+    0 0 100px var(--main-color);
+}
+
+.os-container2 .os-box2 .os-info2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+
+}
+
+.os-container2 .os-box2 .os-info2 h4 {
+    color: var(--main-color);
+    font-size: 28px;
+    margin-top: 14px;
+}
+
+.os-container2 .os-box2 .os-info2 p {
+    margin-top: 10px;
+    font-size: 21px;
+    font-family: "Poppins";
+}
+/* OS 2 part 2 END */
+
+/* OXD START */
+
+.osx{
+    background-color: var(--bg-color);
+    color: black;
+}
+
+.oxd-container1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    align-items: center;
+    justify-items: center;
+    gap: 8rem 8rem;
+}
+
+.oxd-container1 .oxd-box1 {
+    display: flex;
+    justify-content: center;
+    background-color:var(--second-bg-color);
+    color: var(--red-color);
+    height: 450px;
+    width: 300px;
+    border-radius: 3rem;
+    cursor: pointer;
+    border: 5px solid var(--red-color);
+    transition: 0.4s ease-in-out;
+}
+
+.oxd-container1 .oxd-box1:hover {
+    background-color: var(--second-bg-color);
+    color: var(--main-color);
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+}
+
+.oxd-container1 .oxd-box1 .oxd-info1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+.oxd-container1 .oxd-box1 .oxd-info1 img{
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    border-radius: 40%;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.oxd-container1 .oxd-box1 .oxd-info1 img:hover {
+    transform: scale(1.03);
+
+}
+
+.oxd-container1 .oxd-box1 .oxd-info1 h4 {
+    font-size: 28px;
+    margin-top: 14px;
+}
+
+.oxd-container1 .oxd-box1 .oxd-info1 p {
+    margin-top: 10px;
+    font-size: 13px;
+    font-family: "Poppins";
+}
+
+.oxd-container1 .oxd-box1 .oxd-info1 .btn-caos {
+    margin-top: 3rem;
+    font-size: 16px;
+    width: 110px;
+    background-color: transparent;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+    font-family: "Poppins";
+    border-radius: 6rem;
+    transform: scale(1.03);
+    color: var(--red-color);
+    border: 3px solid var(--red-color);
+}
+
+.oxd-container1 .oxd-box1 .oxd-info1 .btn-caos:hover {
+    background-color: var(--second-bg-color);
+    color: var(--main-color);
+    border: 3px solid ;
+    transform: scale(1.03);
+}
+
+/* OX D END */
+
